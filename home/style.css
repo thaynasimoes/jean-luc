@@ -53,7 +53,7 @@ h1:hover{
     text-shadow: 0 0 20px orangered;
 }
 
-h2{
+.h2{
     color: rgb(0, 0, 0);
     text-align: left;
     position: absolute;
@@ -117,7 +117,7 @@ article{
 
 }
 
-img{
+.imgjean{
     padding-right: 50px;
     width: 55%;
 }
@@ -189,8 +189,12 @@ footer {
     margin: 0;
 }
 
-footer img {
+footer img{
     width: 20px;
     margin: 5px;
 }
 
+footer img:hover{
+
+    filter: drop-shadow(0 0 0.20rem orangered);
+}

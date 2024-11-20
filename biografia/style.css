@@ -155,3 +155,8 @@ footer img {
     width: 20px;
     margin: 5px;
 }
+
+footer img:hover{
+
+    filter: drop-shadow(0 0 0.20rem orangered);
+}

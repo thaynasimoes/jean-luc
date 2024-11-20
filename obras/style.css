@@ -9,6 +9,16 @@ header{
     width: 100%;
     
 }
+
+.menu{
+    background-image: url(banner.jpg);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    height: 500px;
+    background-size: cover;
+    background-position: right center;
+}
+
 .menu nav ul{
     margin: 0 50px 0 0;
     text-align: center;
@@ -48,10 +58,31 @@ header{
     margin: 70px;
 
 }
-.banner h2{
-    color: rgb(183, 183, 183);
+h2{
+
+    color: rgb(228, 228, 228);
     border-bottom: solid orangered 5px;
 
+}
+
+h1{
+    color: orangered;
+    text-align: right;
+    position: absolute;
+    top: 14%;
+    left: 65%;
+}
+
+h1:hover{
+    text-shadow: 0 0 20px orangered;
+}
+
+.h2banner{
+    color: rgb(255, 255, 255);
+    text-align: left;
+    position: absolute;
+    top: 25%;
+    left: 50%;
 }
 
 body{
@@ -110,4 +141,9 @@ footer {
 footer img {
     width: 20px;
     margin: 5px;
+}
+
+footer img:hover{
+
+    filter: drop-shadow(0 0 0.20rem orangered);
 }
