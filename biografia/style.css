@@ -4,25 +4,19 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-html, body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: #363636;
-}
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
+body{
+       margin: 0;
+       background-color: #363636;
 }
 
 .menu{
-    background-image: url(banner-home.png);
+    background-image: url(banner.jpg);
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: darken;
     height: 500px;
     background-size: cover;
     background-position: right center;
+
 }
 
 .banner{
@@ -30,14 +24,6 @@ body {
     width: 80%;
     text-align: center;
     text-align: right;
-    display: flex;
-    flex-direction: column;
-
-
-}
-.banner h2{
-    color: rgb(228, 228, 228);
-    border-bottom: solid orangered 5px;
 
 }
 
@@ -46,7 +32,7 @@ h1{
     text-align: right;
     position: absolute;
     top: 24%;
-    left: 65%;
+    right: 65%;
 }
 
 h1:hover{
@@ -54,17 +40,20 @@ h1:hover{
 }
 
 h2{
-    color: rgb(0, 0, 0);
-    text-align: left;
+    color: rgb(202, 198, 198);
+    text-align: right;
     position: absolute;
     top: 30%;
-    left: 50%;
+    right: 50%;
+    border-bottom: solid orangered 5px;
+
 }
 
 .menu nav ul{
     margin: 0 50px 0 0;
     text-align: center;
     font-weight: bolder;
+
 }
 
 .menu nav li{
@@ -100,83 +89,56 @@ h3{
     color: orangered;
     background-color: #5a5a5a;
     font-size: 25px;
+
 }
 
 main {
-    width: 80%;
+    width: 70%;
     margin: auto;
 }
 
 article{
-    background-color: rgba(255, 255, 255, 0.46);
+    background-color: rgba(255, 255, 255, 0.478);
     padding: 16px;
     margin-top: 10px;
     margin-bottom: 22px;
     border-radius: 10px;
     padding: 50px;
-
-}
-
-img{
-    padding-right: 50px;
-    width: 55%;
 }
 .corpo{
     margin-top: 50px;
-
 }
-.corpo-resumo{
+.corpo p{
+    font-size: larger;
+    text-align: right;
+}
+
+.corpo-biografia{
     margin-bottom: 50px;
 }
-.corpo-resumo img{
-    width: 60%;
-    
-}
 
-
-.corpo p{
-    width: 40%;
-    font-size: larger;
-    text-align: center;
-}
-
-.jean{
-    display: flex;
+.biografia{
     margin-top: 10px;
     justify-content: center;
     border-radius: 10px;
+    flex-direction: column;
 
 }
 
-.jean p{
-    text-align: center;
-}
-
-.premiacoes{
-    display: flex;
-    margin-top: 10px;
-    justify-content: center;
-}
-
-.premiacoes ul{
-    margin-right: 25px;
-    padding-top: 5%;
-
+.biografia p{
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: medium;
 }
 
 a{
     text-decoration: none;
     color: orangered;
 }
-
-#link-home{
+#link-biografia{
     color: orangered;
     text-decoration: underline;
 }
-.paragrafos{
-    padding: 30px;
-}
-
 footer {
     width: 100%;
     background-color: black;
@@ -193,4 +155,3 @@ footer img {
     width: 20px;
     margin: 5px;
 }
-
