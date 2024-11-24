@@ -1,33 +1,36 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-body{
-       margin: 0;
-       background-color: #363636;
-}
 
-.menu{
+body {
+    margin: 0;
+    background-color: #363636;
+}
+#link-biografia{
+    color: orangered;
+    text-decoration: underline;
+}
+.menu {
     background-image: url(banner.jpg);
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: darken;
     height: 500px;
     background-size: cover;
     background-position: right center;
-
+    background-position-y: 25%;
 }
 
-.banner{
+.banner {
     margin-top: 50px auto 0;
     width: 80%;
     text-align: center;
     text-align: right;
-
 }
 
-h1{
+h1 {
     color: orangered;
     text-align: right;
     position: absolute;
@@ -35,35 +38,33 @@ h1{
     right: 65%;
 }
 
-h1:hover{
+h1:hover {
     text-shadow: 0 0 20px orangered;
 }
 
-h2{
+h2 {
     color: rgb(202, 198, 198);
     text-align: right;
     position: absolute;
     top: 30%;
     right: 50%;
     border-bottom: solid orangered 5px;
-
 }
 
-.menu nav ul{
+.menu nav ul {
     margin: 0 50px 0 0;
     text-align: center;
     font-weight: bolder;
-
 }
 
-.menu nav li{
+.menu nav li {
     display: inline-block;
     list-style: none;
     color: white;
     margin-left: 2px;
 }
 
-.menu nav{
+.menu nav {
     display: flex;
     justify-content: right;
     padding-top: 1px;
@@ -72,24 +73,23 @@ h2{
     top: 0;
 }
 
-.menu nav a{
+.menu nav a {
     color: white;
-    text-decoration:  none;
+    text-decoration: none;
     list-style: none;
     padding: 20px;
     display: block;
 }
 
-.menu nav a:hover{
+.menu nav a:hover {
     color: orangered;
 }
 
-h3{
+h3 {
     text-align: center;
     color: orangered;
     background-color: #5a5a5a;
     font-size: 25px;
-
 }
 
 main {
@@ -97,7 +97,7 @@ main {
     margin: auto;
 }
 
-article{
+article {
     background-color: rgba(255, 255, 255, 0.478);
     padding: 16px;
     margin-top: 10px;
@@ -105,58 +105,78 @@ article{
     border-radius: 10px;
     padding: 50px;
 }
-.corpo{
+
+.corpo {
     margin-top: 50px;
 }
-.corpo p{
+
+.corpo p {
     font-size: larger;
     text-align: right;
 }
 
-.corpo-biografia{
+.corpo-biografia {
     margin-bottom: 50px;
 }
 
-.biografia{
+.biografia {
     margin-top: 10px;
     justify-content: center;
     border-radius: 10px;
     flex-direction: column;
-
 }
 
-.biografia p{
+.biografia p {
     text-align: left;
     margin-bottom: 10px;
     font-size: medium;
 }
 
-a{
+a {
     text-decoration: none;
     color: orangered;
 }
-#link-biografia{
+
+#link-biografia {
     color: orangered;
     text-decoration: underline;
 }
+
 footer {
     width: 100%;
     background-color: black;
     color: white;
     padding: 20px 0;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    position: relative;
-    left: 0;
-    right: 0;
-    margin: 0;
+
 }
 
-footer img {
-    width: 20px;
+.links {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    margin: 50px;
+}
+
+footer img{
+    width: 30px;
     margin: 5px;
 }
 
 footer img:hover{
 
     filter: drop-shadow(0 0 0.20rem orangered);
+}
+.contatos{
+    display: flex;
+    flex-direction: column;
+}
+.links-icons{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    text-decoration: underline;
+    color: orangered;
 }

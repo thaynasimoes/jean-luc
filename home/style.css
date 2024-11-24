@@ -4,25 +4,24 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
-html, body {
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
     background-color: #363636;
 }
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-}
 
 .menu{
-    background-image: url(banner-home.png);
+    background-image: url(banner-home.jpg);
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: darken;
     height: 500px;
-    background-size: cover;
-    background-position: right center;
+    background-size:cover;
+    background-position-y: 25%;
 }
 
 .banner{
@@ -53,12 +52,14 @@ h1:hover{
     text-shadow: 0 0 20px orangered;
 }
 
-.h2{
-    color: rgb(0, 0, 0);
-    text-align: left;
+h2 {
+    color: rgb(202, 198, 198);
+    text-align: right;
     position: absolute;
     top: 30%;
     left: 50%;
+    border-bottom: solid orangered 5px;
+    font-size: 25px
 }
 
 .menu nav ul{
@@ -182,19 +183,101 @@ footer {
     background-color: black;
     color: white;
     padding: 20px 0;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    position: relative;
-    left: 0;
-    right: 0;
-    margin: 0;
+
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    margin: 50px;
 }
 
 footer img{
-    width: 20px;
+    width: 30px;
     margin: 5px;
 }
 
 footer img:hover{
 
     filter: drop-shadow(0 0 0.20rem orangered);
+}
+.contatos{
+    display: flex;
+    flex-direction: column;
+}
+.links-icons{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    text-decoration: underline;
+    color: orangered;
+}
+
+@media (min-width: 2000px) {
+    .menu nav a {
+        font-size: 18px;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    main div {
+        margin: 50px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .menu {
+        height: 400px;
+    }
+    h1 {
+        left: 50%;
+        font-size: 2.5rem;
+    }
+    .h2banner {
+        left: 40%;
+    }
+    main img {
+        width: 150px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .menu {
+        height: 300px;
+        background-position: center center;
+    }
+    .menu nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu nav a {
+        padding: 10px;
+        font-size: 14px;
+    }
+    h1 {
+        position: static;
+        text-align: center;
+        font-size: 2rem;
+    }
+    .h2banner {
+        position: static;
+        text-align: center;
+    }
+    main div {
+        margin: 20px;
+        padding: 10px;
+    }
+    main img {
+        width: 100px;
+    }
+    .plataforma {
+        flex-direction: column;
+        align-items: center;
+    }
 }
