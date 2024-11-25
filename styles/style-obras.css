@@ -1,181 +1,147 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
+header {
+    background-color: #181f3e;
     width: 100%;
-    margin: 0;
-    padding: 0;
-    background-color: #363636;
 }
 
-.menu{
-    background-image: url(banner-home.jpg);
+.menu {
+    background-image: url(/assets/images/banner-obras.jpg);
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: darken;
     height: 500px;
-    background-size:cover;
+    background-size: cover;
+    background-position: right center;
     background-position-y: 25%;
 }
 
-.banner{
-    margin-top: 50px auto 0;
-    width: 80%;
-    text-align: center;
-    text-align: right;
-    display: flex;
-    flex-direction: column;
-
-
-}
-.banner h2{
-    color: rgb(228, 228, 228);
-    border-bottom: solid orangered 5px;
-
-}
-
-h1{
-    color: orangered;
-    text-align: right;
-    position: absolute;
-    top: 24%;
-    left: 65%;
-}
-
-h1:hover{
-    text-shadow: 0 0 20px orangered;
-}
-
-h2 {
-    color: rgb(202, 198, 198);
-    text-align: right;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    border-bottom: solid orangered 5px;
-    font-size: 25px
-}
-
-.menu nav ul{
+.menu nav ul {
     margin: 0 50px 0 0;
     text-align: center;
     font-weight: bolder;
 }
 
-.menu nav li{
+.menu nav li {
     display: inline-block;
     list-style: none;
     color: white;
     margin-left: 2px;
 }
 
-.menu nav{
+.menu nav {
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     padding-top: 1px;
     width: 100%;
     position: fixed;
     top: 0;
 }
 
-.menu nav a{
+.menu nav a {
     color: white;
-    text-decoration:  none;
+    text-decoration: none;
     list-style: none;
     padding: 20px;
     display: block;
 }
 
-.menu nav a:hover{
+.menu nav a:hover {
     color: orangered;
 }
 
-h3{
-    text-align: center;
+.banner {
+    margin: 70px;
+}
+
+h2 {
+    color:orangered;
+    border-bottom: solid orangered 5px;
+
+        padding-bottom: 20px;
+        padding-top: 30px;
+        text-align: left;
+        margin: 0;
+
+}
+
+h1 {
     color: orangered;
-    background-color: #5a5a5a;
-    font-size: 25px;
+    text-align: right;
+    position: absolute;
+    top: 14%;
+    left: 65%;
 }
 
-main {
-    width: 80%;
-    margin: auto;
+h1:hover {
+    text-shadow: 0 0 20px orangered;
 }
 
-article{
-    background-color: rgba(255, 255, 255, 0.46);
-    padding: 16px;
-    margin-top: 10px;
-    margin-bottom: 22px;
-    border-radius: 10px;
-    padding: 50px;
-
+.h2banner {
+    color: rgb(255, 255, 255);
+    text-align: left;
+    position: absolute;
+    top: 25%;
+    left: 50%;
 }
 
-.imgjean{
-    padding-right: 50px;
-    width: 55%;
-}
-.corpo{
-    margin-top: 50px;
-
-}
-.corpo-resumo{
-    margin-bottom: 50px;
-}
-.corpo-resumo img{
-    width: 60%;
-    
+body {
+    background-color: #363636;
 }
 
-
-.corpo p{
-    width: 40%;
-    font-size: larger;
-    text-align: center;
-}
-
-.jean{
-    display: flex;
-    margin-top: 10px;
-    justify-content: center;
-    border-radius: 10px;
-
-}
-
-.jean p{
-    text-align: center;
-}
-
-.premiacoes{
-    display: flex;
-    margin-top: 10px;
-    justify-content: center;
-}
-
-.premiacoes ul{
-    margin-right: 25px;
-    padding-top: 5%;
-
-}
-
-a{
-    text-decoration: none;
-    color: orangered;
-}
-
-#link-home{
+#link-obras {
     color: orangered;
     text-decoration: underline;
 }
-.paragrafos{
-    padding: 30px;
+
+main {
+    margin-top: 50px;
+}
+
+main img {
+    width: 200px;
+}
+
+main div {
+    background-color: rgba(255, 255, 255, 0.641);
+    margin: 70px;
+    padding-left: 40px;
+    border-radius: 10px;
+}
+
+main h2 {
+    padding-bottom: 20px;
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin-left: 70px;
+    margin-top: 50px;
+    color: orangered;
+}
+
+h3 {
+    color: orangered;
+}
+
+.container-obras{
+    display: flex;
+
+}
+.plataforma {
+    display: flex;
+    background-color: transparent;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+.plataforma a {
+    padding-left: 5px;
 }
 
 footer {
@@ -208,6 +174,11 @@ footer img:hover{
 .contatos{
     display: flex;
     flex-direction: column;
+
+}
+.contatos a{
+    display: flex;
+    align-items: center;
 }
 .links-icons{
     display: flex;
@@ -217,7 +188,15 @@ footer img:hover{
     color: orangered;
 }
 
-@media (min-width: 2000px) {
+.links-icons a {
+    color: orangered;
+    text-decoration: underline;
+}
+
+
+
+
+@media (min-width: 1200px) {
     .menu nav a {
         font-size: 18px;
     }
@@ -229,6 +208,11 @@ footer img:hover{
     }
 }
 
+@media (max-width: 1040px){
+    .links{
+        flex-wrap: wrap;
+    }
+}
 
 @media (min-width: 768px) and (max-width: 1199px) {
     .menu {
@@ -264,10 +248,15 @@ footer img:hover{
         position: static;
         text-align: center;
         font-size: 2rem;
+        text-wrap: nowrap;
+
     }
     .h2banner {
         position: static;
         text-align: center;
+    }
+    main{
+        width: 100%;
     }
     main div {
         margin: 20px;
@@ -276,6 +265,7 @@ footer img:hover{
     main img {
         width: 100px;
     }
+    
     .plataforma {
         flex-direction: column;
         align-items: center;
